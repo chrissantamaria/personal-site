@@ -14,12 +14,8 @@ const ThemeProvider = ({ children }: Props) => (
         'html, body, #___gatsby, #gatsby-focus-wrapper': {
           height: '100%',
         },
-      }}
-    />
-    <Global
-      styles={{
         body: {
-          'font-family': '"Open Sans", Arial, Helvetica, sans-serif',
+          fontFamily: '"Open Sans", Arial, Helvetica, sans-serif',
         },
       }}
     />
