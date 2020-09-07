@@ -6,17 +6,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-netlify`,
-    {
-      resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: {
-          '@src': 'src',
-          '@components': 'src/components',
-          '@images': 'src/images',
-          '@pages': 'src/pages',
-        },
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
