@@ -1,9 +1,8 @@
 import React from 'react';
-import { PageProps } from 'gatsby';
 
-const IndexPage: React.FC<PageProps> = () => (
+const IndexPage = () => (
   <div>
-    <h1>Chris Santamaria</h1>
+    <h1 css={{ color: 'blue' }}>Chris Santamaria</h1>
   </div>
 );
 
