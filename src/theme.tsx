@@ -16,6 +16,13 @@ const ThemeProvider = ({ children }: Props) => (
         },
       }}
     />
+    <Global
+      styles={{
+        body: {
+          'font-family': '"Open Sans", Arial, Helvetica, sans-serif',
+        },
+      }}
+    />
     {children}
   </>
 );
