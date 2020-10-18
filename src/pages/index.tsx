@@ -57,10 +57,7 @@ const IndexPage = () => (
       <Text>
         I&apos;m a student at the University of Virginia studying computer
         science, currently on a gap semester building web experiences at{' '}
-        <Link href="https://tinder.com" target="_blank" rel="noreferrer">
-          Tinder
-        </Link>
-        .
+        <Link href="https://tinder.com">Tinder</Link>.
       </Text>
       <Text>
         Feel free to reach out through any of the platforms below or view my

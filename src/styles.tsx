@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import OutboundLink from './components/OutboundLink';
 
 export const RootContainer = styled.div({
   display: 'flex',
@@ -56,7 +57,7 @@ export const Text = styled.p({
   lineHeight: '2rem',
 });
 
-export const Link = styled.a({
+export const Link = styled(OutboundLink)({
   color: 'inherit',
 });
 

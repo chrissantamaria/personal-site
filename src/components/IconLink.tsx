@@ -1,4 +1,5 @@
 import React from 'react';
+import OutboundLink from './OutboundLink';
 
 type Props = {
   component: React.FC;
@@ -6,9 +7,9 @@ type Props = {
 };
 
 const IconLink = ({ component: Component, href }: Props) => (
-  <a href={href} target="_blank" rel="noreferrer" css={{ margin: '0 1rem' }}>
+  <OutboundLink href={href} css={{ margin: '0 1rem' }}>
     <Component css={{ height: 36 }} />
-  </a>
+  </OutboundLink>
 );
 
 export default IconLink;
