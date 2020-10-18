@@ -1,9 +1,10 @@
 {
   "name": "personal-site",
   "version": "0.1.0",
-  "private": true,
   "description": "A portfolio website to display my contact info, resume and projects",
   "author": "Chris Santamaria <chris@santamaria.me>",
+  "license": "MIT",
+  "private": true,
   "dependencies": {
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
@@ -36,7 +37,6 @@
     "prettier": "2.1.2",
     "typescript": "^4.0.3"
   },
-  "license": "MIT",
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
