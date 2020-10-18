@@ -1,3 +1,4 @@
+import React from 'react';
 import { keyframes } from '@emotion/core';
 
 const float = keyframes`
