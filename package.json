@@ -42,7 +42,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json,md}\"",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,tsx,json,md}\"",
     "lint": "eslint --ignore-path .gitignore ."
   }
 }
