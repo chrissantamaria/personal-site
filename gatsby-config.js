@@ -18,12 +18,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-gtag`,
-      options: {
-        trackingId: 'G-G42PMX3TYJ',
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Chris Santamaria`,
