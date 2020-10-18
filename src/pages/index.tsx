@@ -52,7 +52,7 @@ const IndexPage = () => (
       <Subtitle>Student, software engineer, and avid learner</Subtitle>
       <ArrowIndicator />
     </LandingContainer>
-    <AboutContainer>
+    <AboutContainer id="about">
       <Header>Hi, I&apos;m Chris! 👋</Header>
       <Text>
         I&apos;m a student at the University of Virginia studying computer

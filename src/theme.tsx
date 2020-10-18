@@ -14,6 +14,9 @@ const ThemeProvider = ({ children }: Props) => (
         'html, body, #___gatsby, #gatsby-focus-wrapper': {
           height: '100%',
         },
+        html: {
+          scrollBehavior: 'smooth',
+        },
         body: {
           fontFamily: '"Open Sans", Arial, Helvetica, sans-serif',
         },
