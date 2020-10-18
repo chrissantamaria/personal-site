@@ -2,22 +2,77 @@ import React from 'react';
 
 import Headshot from '../components/Headshot';
 import ArrowIndicator from '../components/ArrowIndicator';
+import IconLink from '../components/IconLink';
+
+import GitHubIcon from '../components/icons/GitHubIcon';
+import LinkedInIcon from '../components/icons/LinkedInIcon';
+import PaperIcon from '../components/icons/PaperIcon';
+import MailIcon from '../components/icons/MailIcon';
+
 import {
+  AboutContainer,
+  Header,
   HeadshotContainer,
+  IconRow,
   LandingContainer,
+  Link,
+  RootContainer,
   Subtitle,
+  Text,
   Title,
 } from '../styles';
 
+const icons = [
+  {
+    component: GitHubIcon,
+    href: 'https://github.com/chrissantamaria',
+  },
+  {
+    component: LinkedInIcon,
+    href: 'https://www.linkedin.com/in/chris-santamaria-10',
+  },
+  {
+    component: PaperIcon,
+    href:
+      'http://github.com/chrissantamaria/resume/releases/latest/download/resume.pdf',
+  },
+  {
+    component: MailIcon,
+    href: 'mailto:chris@santamaria.me?subject=Hey!',
+  },
+];
+
 const IndexPage = () => (
-  <LandingContainer>
-    <HeadshotContainer>
-      <Headshot />
-    </HeadshotContainer>
-    <Title>Chris Santamaria</Title>
-    <Subtitle>Student, fullstack web developer, and avid learner</Subtitle>
-    <ArrowIndicator />
-  </LandingContainer>
+  <RootContainer>
+    <LandingContainer>
+      <HeadshotContainer>
+        <Headshot />
+      </HeadshotContainer>
+      <Title>Chris Santamaria</Title>
+      <Subtitle>Student, software engineer, and avid learner</Subtitle>
+      <ArrowIndicator />
+    </LandingContainer>
+    <AboutContainer>
+      <Header>Hi, I&apos;m Chris! 👋</Header>
+      <Text>
+        I&apos;m a student at the University of Virginia studying computer
+        science, currently on a gap semester building web experiences at{' '}
+        <Link href="https://tinder.com" target="_blank" rel="noreferrer">
+          Tinder
+        </Link>
+        .
+      </Text>
+      <Text>
+        Feel free to reach out through any of the platforms below or view my
+        resume. I&apos;d love to get in touch!
+      </Text>
+      <IconRow>
+        {icons.map((props) => (
+          <IconLink key={props.href} {...props} />
+        ))}
+      </IconRow>
+    </AboutContainer>
+  </RootContainer>
 );
 
 export default IndexPage;

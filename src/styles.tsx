@@ -1,5 +1,10 @@
 import styled from '@emotion/styled';
 
+export const RootContainer = styled.div({
+  display: 'flex',
+  flexDirection: 'column',
+});
+
 export const LandingContainer = styled.div({
   height: 'calc(100vh - 2rem)',
   display: 'flex',
@@ -30,7 +35,34 @@ export const Subtitle = styled.h2({
   fontSize: '1.7rem',
   fontWeight: 300,
 });
+
+export const AboutContainer = styled.div({
+  margin: '64px auto',
+  padding: '0 32px',
+  maxWidth: 800,
+});
+
+export const Header = styled.h3({
+  margin: 0,
+  marginBottom: '1rem',
   fontSize: '1.8rem',
-  color: 'white',
+  fontWeight: 600,
+});
+
+export const Text = styled.p({
+  margin: '1rem 0',
+  fontSize: '1.3rem',
   fontWeight: 300,
+  lineHeight: '2rem',
+});
+
+export const Link = styled.a({
+  color: 'inherit',
+});
+
+export const IconRow = styled.div({
+  display: 'flex',
+  justifyContent: 'space-between',
+  maxWidth: 350,
+  margin: '0 auto',
 });
