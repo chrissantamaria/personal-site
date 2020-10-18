@@ -6,8 +6,8 @@ import IconLink from '../components/IconLink';
 
 import GitHubIcon from '../components/icons/GitHubIcon';
 import LinkedInIcon from '../components/icons/LinkedInIcon';
-import PaperIcon from '../components/icons/PaperIcon';
-import MailIcon from '../components/icons/MailIcon';
+import ResumeIcon from '../components/icons/ResumeIcon';
+import EmailIcon from '../components/icons/EmailIcon';
 
 import {
   AboutContainer,
@@ -32,12 +32,12 @@ const icons = [
     href: 'https://www.linkedin.com/in/chris-santamaria-10',
   },
   {
-    component: PaperIcon,
+    component: ResumeIcon,
     href:
       'http://github.com/chrissantamaria/resume/releases/latest/download/resume.pdf',
   },
   {
-    component: MailIcon,
+    component: EmailIcon,
     href: 'mailto:chris@santamaria.me?subject=Hey!',
   },
 ];
