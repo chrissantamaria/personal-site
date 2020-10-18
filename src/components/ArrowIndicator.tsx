@@ -18,7 +18,7 @@ const ArrowIndicator = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
 
   const handleScroll = debounce(() => {
-    setHasScrolled(window.scrollY !== 0);
+    setHasScrolled(window.scrollY > 20);
   }, 100);
 
   useEffect(() => {
