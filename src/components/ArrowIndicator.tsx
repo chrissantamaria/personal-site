@@ -16,11 +16,13 @@ const float = keyframes`
   }
 `;
 
+const checkHasScrolled = () => window.scrollY > 20;
+
 const ArrowIndicator = () => {
-  const [hasScrolled, setHasScrolled] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(checkHasScrolled());
 
   const handleScroll = debounce(() => {
-    setHasScrolled(window.scrollY > 20);
+    setHasScrolled(checkHasScrolled());
   }, 100);
 
   useEffect(() => {
