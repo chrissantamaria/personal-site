@@ -22,7 +22,7 @@ module.exports = {
       options: {
         name: `Chris Santamaria`,
         start_url: `/`,
-        icon: `src/images/favicon.svg`,
+        icon: `src/images/favicon.png`,
         background_color: `#543f79`,
         theme_color: `#543f79`,
         display: `minimal-ui`,
