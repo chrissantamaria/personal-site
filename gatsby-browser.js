@@ -2,7 +2,7 @@ import React from 'react';
 import ThemeProvider from './src/theme';
 import SEO from './src/components/SEO';
 
-require('typeface-open-sans');
+import 'typeface-open-sans';
 
 export const wrapPageElement = ({ element }) => (
   <ThemeProvider>
