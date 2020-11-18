@@ -56,7 +56,7 @@ const IndexPage = () => (
       <Header>Hi, I&apos;m Chris! 👋</Header>
       <Text>
         I&apos;m a student at the University of Virginia studying computer
-        science, currently on a gap semester building web experiences at{' '}
+        science, currently on a gap year building web experiences at{' '}
         <Link href="https://tinder.com">Tinder</Link>.
       </Text>
       <Text>
