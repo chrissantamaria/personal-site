@@ -33,8 +33,7 @@ const icons = [
   },
   {
     component: ResumeIcon,
-    href:
-      'http://github.com/chrissantamaria/resume/releases/latest/download/resume.pdf',
+    href: '/resume.pdf',
   },
   {
     component: EmailIcon,

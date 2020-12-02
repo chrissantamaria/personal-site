@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/resume.pdf"
+  to = "http://github.com/chrissantamaria/resume/releases/latest/download/resume.pdf"
+  status = 200
+  force = true
