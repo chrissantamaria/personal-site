@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { keyframes } from '@emotion/core';
+import { keyframes } from '@emotion/react';
 import debounce from 'lodash/debounce';
 
 import ArrowIcon from './icons/ArrowIcon';
