@@ -50,7 +50,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,tsx,json,md}\"",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,ts,tsx,json,md}\"",
     "lint": "eslint --ignore-path .gitignore ."
   },
   "husky": {
@@ -59,7 +59,7 @@
     }
   },
   "lint-staged": {
-    "*.tsx": [
+    "*.{js,ts,tsx,json,md}": [
       "jest --bail --findRelatedTests",
       "eslint --cache --fix",
       "prettier --write"
