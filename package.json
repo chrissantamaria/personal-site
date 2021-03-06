@@ -61,7 +61,8 @@
   "lint-staged": {
     "*.tsx": [
       "jest --bail --findRelatedTests",
-      "eslint --cache --fix"
+      "eslint --cache --fix",
+      "prettier --write"
     ]
   }
 }
