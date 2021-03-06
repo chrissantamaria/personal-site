@@ -1,27 +1,28 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import { StaticImage } from 'gatsby-plugin-image';
 
-const Headshot = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "headshot.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 400, quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `);
-
-  return (
-    <Img
-      css={{ border: '6px solid white', borderRadius: '50%' }}
-      fluid={data.placeholderImage.childImageSharp.fluid}
-      alt="Headshot"
-    />
-  );
+type Props = {
+  className?: string;
 };
+
+const Headshot = ({ className }: Props) => (
+  <StaticImage
+    src="../images/headshot.jpg"
+    width={400}
+    className={className}
+    css={{
+      border: '6px solid white',
+      borderRadius: '50%',
+      // Prevent child placeholder img from having its own border
+      '& img': {
+        border: 0,
+      },
+    }}
+    loading="eager"
+    placeholder="blurred"
+    quality={90}
+    alt="Headshot"
+  />
+);
 
 export default Headshot;

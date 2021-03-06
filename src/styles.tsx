@@ -19,12 +19,6 @@ export const LandingContainer = styled.div({
   position: 'relative',
 });
 
-export const HeadshotContainer = styled.div({
-  width: 400,
-  maxWidth: '90%',
-  marginBottom: '1rem',
-});
-
 export const Title = styled.h1({
   margin: 0,
   fontSize: '2.6rem',

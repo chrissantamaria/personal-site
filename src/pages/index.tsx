@@ -12,7 +12,6 @@ import EmailIcon from '../components/icons/EmailIcon';
 import {
   AboutContainer,
   Header,
-  HeadshotContainer,
   IconRow,
   LandingContainer,
   Link,
@@ -44,9 +43,7 @@ const icons = [
 const IndexPage = () => (
   <RootContainer>
     <LandingContainer>
-      <HeadshotContainer>
-        <Headshot />
-      </HeadshotContainer>
+      <Headshot css={{ marginBottom: '1rem' }} />
       <Title>Chris Santamaria</Title>
       <Subtitle>Student, software engineer, and avid learner</Subtitle>
       <ArrowIndicator />
