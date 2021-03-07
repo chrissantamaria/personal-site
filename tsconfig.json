@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/types/*"]
+    },
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}
