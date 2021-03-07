@@ -59,7 +59,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx,json,md}": [
+    "*.{js,ts,tsx,json}": [
       "jest --bail --findRelatedTests",
       "eslint --cache --fix",
       "prettier --write"
