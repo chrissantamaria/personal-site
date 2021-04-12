@@ -40,7 +40,10 @@ const ArrowIndicator = () => {
         cursor: 'pointer',
         transition: 'opacity 0.5s',
       }}
-      style={{ opacity: hasScrolled ? 0 : 1 }}
+      style={{
+        opacity: hasScrolled ? 0 : 1,
+        pointerEvents: hasScrolled ? 'none' : 'auto',
+      }}
       href="#about"
     >
       <ArrowIcon
