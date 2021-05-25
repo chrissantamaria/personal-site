@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import OutboundLink from './components/OutboundLink';
 
 export const RootContainer = styled.div({
   display: 'flex',
@@ -49,10 +48,6 @@ export const Text = styled.p({
   fontSize: '1.3rem',
   fontWeight: 300,
   lineHeight: '2rem',
-});
-
-export const Link = styled(OutboundLink)({
-  color: 'inherit',
 });
 
 export const IconRow = styled.div({

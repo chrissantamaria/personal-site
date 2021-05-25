@@ -14,7 +14,6 @@ import {
   Header,
   IconRow,
   LandingContainer,
-  Link,
   RootContainer,
   Subtitle,
   Text,
@@ -52,8 +51,7 @@ const IndexPage = () => (
       <Header>Hi, I&apos;m Chris! 👋</Header>
       <Text>
         I&apos;m a student at the University of Virginia studying computer
-        science, currently building web experiences at{' '}
-        <Link href="https://lyft.com">Lyft</Link>.
+        science, currently building web experiences at Lyft.
       </Text>
       <Text>
         Feel free to reach out through any of the platforms below or view my
