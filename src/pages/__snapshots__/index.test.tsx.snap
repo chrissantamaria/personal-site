@@ -77,16 +77,16 @@ exports[`IndexPage renders 1`] = `
     <p
       className="css-q9kmgt"
     >
-      I'm a student at the University of Virginia studying computer science, currently on a gap year building web experiences at
+      I'm a student at the University of Virginia studying computer science, currently building web experiences at
        
       <a
         className="css-q2y3yl"
-        href="https://tinder.com"
+        href="https://lyft.com"
         onClick={[Function]}
         rel="noreferrer"
         target="_blank"
       >
-        Tinder
+        Lyft
       </a>
       .
     </p>
