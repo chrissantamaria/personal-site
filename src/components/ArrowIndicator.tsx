@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useState } from 'react';
 import clsx from 'clsx';
-import debounce from 'lodash/debounce';
+import debounce from 'just-debounce';
 
 import ArrowIcon from './icons/ArrowIcon';
 
