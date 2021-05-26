@@ -26,7 +26,7 @@ const icons = [
   },
   {
     component: EmailIcon,
-    href: 'mailto:chris@santamaria.me?subject=Hey!',
+    href: 'mailto:chris@santamaria.me?subject=👋',
   },
 ];
 

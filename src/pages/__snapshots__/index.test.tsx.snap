@@ -123,7 +123,7 @@ exports[`IndexPage renders 1`] = `
       </a>
       <a
         className="mx-4"
-        href="mailto:chris@santamaria.me?subject=Hey!"
+        href="mailto:chris@santamaria.me?subject=👋"
         onClick={[Function]}
         rel="noreferrer"
         target="_blank"
