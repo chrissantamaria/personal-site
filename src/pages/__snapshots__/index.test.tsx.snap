@@ -2,58 +2,32 @@
 
 exports[`IndexPage renders 1`] = `
 <div
-  className="css-j7qwjs"
+  className="flex flex-col"
 >
   <div
-    className="css-3ay0rc"
+    className="relative flex flex-col items-center justify-center px-8 bg-primary text-white text-center"
+    style={
+      Object {
+        "height": "calc(100vh - 2rem)",
+      }
+    }
   >
     <h1
-      className="css-1hc6z4q"
+      className="text-5xl font-bold mb-2"
     >
       Chris Santamaria
     </h1>
     <h2
-      className="css-1aqd1sl"
+      className="text-3xl font-light"
     >
       Student, software engineer, and avid learner
     </h2>
     <a
-      css={
-        Object {
-          "bottom": 8,
-          "cursor": "pointer",
-          "left": "50%",
-          "position": "absolute",
-          "transform": "translateX(-50%)",
-          "transition": "opacity 0.5s",
-        }
-      }
+      className="absolute bottom-2 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 cursor-pointer opacity-100 pointer-events-auto"
       href="#about"
-      style={
-        Object {
-          "opacity": 1,
-          "pointerEvents": "auto",
-        }
-      }
     >
       <svg
-        css={
-          Object {
-            "animation": "_EMO_animation-2uqv96_@keyframes animation-2uqv96{
-  0% {
-    transform: translateY(0px);
-  } 
-  50% {
-    transform: translateY(-8px);
-  } 
-  100% {
-    transform: translateY(0px);
-  }
-}_EMO_ 2s ease infinite",
-            "fill": "white",
-            "height": 48,
-          }
-        }
+        className="text-white fill-current h-12 animate-float "
         viewBox="0 0 24 24"
       >
         <title>
@@ -66,44 +40,36 @@ exports[`IndexPage renders 1`] = `
     </a>
   </div>
   <div
-    className="css-1lva9lf"
+    className="my-16 mx-auto px-8 max-w-4xl"
     id="about"
   >
     <h3
-      className="css-1mis095"
+      className="mb-4 text-3xl font-semibold leading-8"
     >
       Hi, I'm Chris! 👋
     </h3>
     <p
-      className="css-q9kmgt"
+      className="my-4 text-xl font-light leading-8"
     >
       I'm a student at the University of Virginia studying computer science, currently building web experiences at Lyft.
     </p>
     <p
-      className="css-q9kmgt"
+      className="my-4 text-xl font-light leading-8"
     >
       Feel free to reach out through any of the platforms below or view my resume. I'd love to get in touch!
     </p>
     <div
-      className="css-p4sd7u"
+      className="flex justify-between max-w-sm mx-auto"
     >
       <a
-        css={
-          Object {
-            "margin": "0 1rem",
-          }
-        }
+        className="mx-4"
         href="https://github.com/chrissantamaria"
         onClick={[Function]}
         rel="noreferrer"
         target="_blank"
       >
         <svg
-          css={
-            Object {
-              "height": 36,
-            }
-          }
+          className="h-9"
           viewBox="0 0 24 24"
         >
           <title>
@@ -115,22 +81,14 @@ exports[`IndexPage renders 1`] = `
         </svg>
       </a>
       <a
-        css={
-          Object {
-            "margin": "0 1rem",
-          }
-        }
+        className="mx-4"
         href="https://www.linkedin.com/in/chris-santamaria-10"
         onClick={[Function]}
         rel="noreferrer"
         target="_blank"
       >
         <svg
-          css={
-            Object {
-              "height": 36,
-            }
-          }
+          className="h-9"
           viewBox="0 0 24 24"
         >
           <title>
@@ -142,22 +100,14 @@ exports[`IndexPage renders 1`] = `
         </svg>
       </a>
       <a
-        css={
-          Object {
-            "margin": "0 1rem",
-          }
-        }
+        className="mx-4"
         href="/resume.pdf"
         onClick={[Function]}
         rel="noreferrer"
         target="_blank"
       >
         <svg
-          css={
-            Object {
-              "height": 36,
-            }
-          }
+          className="h-9"
           viewBox="0 0 512 512"
         >
           <title>
@@ -172,22 +122,14 @@ exports[`IndexPage renders 1`] = `
         </svg>
       </a>
       <a
-        css={
-          Object {
-            "margin": "0 1rem",
-          }
-        }
+        className="mx-4"
         href="mailto:chris@santamaria.me?subject=Hey!"
         onClick={[Function]}
         rel="noreferrer"
         target="_blank"
       >
         <svg
-          css={
-            Object {
-              "height": 36,
-            }
-          }
+          className="h-9"
           viewBox="0 0 24 24"
         >
           <title>

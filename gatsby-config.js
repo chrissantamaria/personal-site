@@ -10,7 +10,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-emotion`,
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

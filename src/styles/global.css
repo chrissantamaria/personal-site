@@ -1,0 +1,18 @@
+:root {
+  --color-primary: #543f79;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}

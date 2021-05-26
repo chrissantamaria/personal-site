@@ -1,20 +1,8 @@
 import React, { useLayoutEffect, useState } from 'react';
-import { keyframes } from '@emotion/react';
+import clsx from 'clsx';
 import debounce from 'lodash/debounce';
 
 import ArrowIcon from './icons/ArrowIcon';
-
-const float = keyframes`
-  0% {
-    transform: translateY(0px);
-  } 
-  50% {
-    transform: translateY(-8px);
-  } 
-  100% {
-    transform: translateY(0px);
-  }
-`;
 
 const ArrowIndicator = () => {
   // Setting default to true gives a nice fade-in while at the top of the page
@@ -39,27 +27,16 @@ const ArrowIndicator = () => {
 
   return (
     <a
-      css={{
-        position: 'absolute',
-        bottom: 8,
-        left: '50%',
-        transform: 'translateX(-50%)',
-        cursor: 'pointer',
-        transition: 'opacity 0.5s',
-      }}
-      style={{
-        opacity: hasScrolled ? 0 : 1,
-        pointerEvents: hasScrolled ? 'none' : 'auto',
-      }}
+      className={clsx(
+        'absolute bottom-2 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 cursor-pointer',
+        {
+          'opacity-100 pointer-events-auto': !hasScrolled,
+          'opacity-0 pointer-events-none': hasScrolled,
+        }
+      )}
       href="#about"
     >
-      <ArrowIcon
-        css={{
-          fill: 'white',
-          height: 48,
-          animation: `${float} 2s ease infinite`,
-        }}
-      />
+      <ArrowIcon className="text-white fill-current h-12 animate-float " />
     </a>
   );
 };

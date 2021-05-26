@@ -2,13 +2,13 @@ import React from 'react';
 import OutboundLink from './OutboundLink';
 
 type Props = {
-  component: React.FC;
+  component: React.FC<React.SVGProps<SVGSVGElement>>;
   href: string;
 };
 
 const IconLink = ({ component: Component, href }: Props) => (
-  <OutboundLink href={href} css={{ margin: '0 1rem' }}>
-    <Component css={{ height: 36 }} />
+  <OutboundLink className="mx-4" href={href}>
+    <Component className="h-9" />
   </OutboundLink>
 );
 

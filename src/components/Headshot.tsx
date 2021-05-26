@@ -1,4 +1,5 @@
 import React from 'react';
+import clsx from 'clsx';
 import { StaticImage } from 'gatsby-plugin-image';
 
 type Props = {
@@ -9,18 +10,9 @@ const Headshot = ({ className }: Props) => (
   <StaticImage
     src="../images/headshot.jpg"
     width={400}
-    className={className}
-    css={{
-      border: '6px solid white',
-      borderRadius: '50%',
-      // Hacky fix to handle Safari not properly rendering rounded image
-      // (manually creating a new stacking context)
-      transform: 'translateZ(0)',
-      // Prevent child placeholder img from having its own border
-      '& img': {
-        border: 0,
-      },
-    }}
+    className={clsx(className, 'rounded-full border-4 border-white isolate')}
+    // Prevent child placeholder img from having its own border
+    imgClassName="border-0"
     loading="eager"
     placeholder="blurred"
     quality={90}

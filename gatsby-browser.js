@@ -2,7 +2,7 @@ import React from 'react';
 import galite from 'ga-lite';
 import 'typeface-open-sans';
 
-import ThemeProvider from './src/theme';
+import './src/styles/global.css';
 import SEO from './src/components/SEO';
 
 export const onClientEntry = () => {
@@ -13,8 +13,8 @@ export const onClientEntry = () => {
 };
 
 export const wrapPageElement = ({ element }) => (
-  <ThemeProvider>
+  <>
     <SEO />
     {element}
-  </ThemeProvider>
+  </>
 );
