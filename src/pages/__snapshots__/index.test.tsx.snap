@@ -27,7 +27,7 @@ exports[`IndexPage renders 1`] = `
       href="#about"
     >
       <svg
-        className="text-white fill-current h-12 animate-float "
+        className="text-white fill-current h-12 animate-float"
         viewBox="0 0 24 24"
       >
         <title>

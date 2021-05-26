@@ -36,7 +36,7 @@ const ArrowIndicator = () => {
       )}
       href="#about"
     >
-      <ArrowIcon className="text-white fill-current h-12 animate-float " />
+      <ArrowIcon className="text-white fill-current h-12 animate-float" />
     </a>
   );
 };
