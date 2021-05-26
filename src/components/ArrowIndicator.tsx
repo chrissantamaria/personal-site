@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import { keyframes } from '@emotion/react';
 import debounce from 'lodash/debounce';
 
@@ -17,13 +17,20 @@ const float = keyframes`
 `;
 
 const ArrowIndicator = () => {
-  const [hasScrolled, setHasScrolled] = useState(false);
+  // Setting default to true gives a nice fade-in while at the top of the page
+  // while preventing an immediate fade-out for users refreshing at the bottom of the page
+  const [hasScrolled, setHasScrolled] = useState(true);
 
-  const handleScroll = debounce(() => {
-    setHasScrolled(window.scrollY > 20);
-  }, 100);
+  useLayoutEffect(() => {
+    const updateHasScrolled = () => {
+      setHasScrolled(window.scrollY > 20);
+    };
 
-  useEffect(() => {
+    const handleScroll = debounce(updateHasScrolled, 100);
+
+    // Checking true value after initial SSR render
+    updateHasScrolled();
+
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
