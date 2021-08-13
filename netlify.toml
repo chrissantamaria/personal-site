@@ -3,3 +3,9 @@
   to = "http://github.com/chrissantamaria/resume/releases/latest/download/resume.pdf"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/call"
+  to = "https://calendly.com/chrissantamaria"
+  status = 301
+  force = true
