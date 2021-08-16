@@ -59,7 +59,7 @@ exports[`IndexPage renders 1`] = `
       Feel free to reach out through any of the platforms below or view my resume. I'd love to get in touch!
     </p>
     <div
-      className="flex justify-between max-w-sm mx-auto"
+      className="flex justify-between max-w-sm mx-auto mt-8"
     >
       <a
         className="mx-4"

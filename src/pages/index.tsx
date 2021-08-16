@@ -55,7 +55,7 @@ const IndexPage = () => (
         Feel free to reach out through any of the platforms below or view my
         resume. I&apos;d love to get in touch!
       </p>
-      <div className="flex justify-between max-w-sm mx-auto">
+      <div className="flex justify-between max-w-sm mx-auto mt-8">
         {icons.map((props) => (
           <IconLink key={props.href} {...props} />
         ))}
