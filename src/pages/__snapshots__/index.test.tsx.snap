@@ -40,7 +40,7 @@ exports[`IndexPage renders 1`] = `
     </a>
   </div>
   <div
-    className="my-16 mx-auto px-8 max-w-4xl"
+    className="my-16 mx-auto px-8 max-w-5xl"
     id="about"
   >
     <h3
@@ -51,7 +51,7 @@ exports[`IndexPage renders 1`] = `
     <p
       className="my-4 text-xl font-light leading-8"
     >
-      I'm a student at the University of Virginia studying computer science, currently building web experiences at Lyft.
+      I'm a student at the University of Virginia studying computer science, previously at Lyft and Tinder.
     </p>
     <p
       className="my-4 text-xl font-light leading-8"

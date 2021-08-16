@@ -43,13 +43,13 @@ const IndexPage = () => (
       </h2>
       <ArrowIndicator />
     </div>
-    <div className="my-16 mx-auto px-8 max-w-4xl" id="about">
+    <div className="my-16 mx-auto px-8 max-w-5xl" id="about">
       <h3 className="mb-4 text-3xl font-semibold leading-8">
         Hi, I&apos;m Chris! 👋
       </h3>
       <p className={CLASSNAME_PARAGRAPH}>
         I&apos;m a student at the University of Virginia studying computer
-        science, currently building web experiences at Lyft.
+        science, previously at Lyft and Tinder.
       </p>
       <p className={CLASSNAME_PARAGRAPH}>
         Feel free to reach out through any of the platforms below or view my
