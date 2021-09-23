@@ -1,7 +1,4 @@
 module.exports = {
-  flags: {
-    DEV_SSR: true,
-  },
   siteMetadata: {
     title: `Chris Santamaria`,
     description: `Student, fullstack web developer and avid learner`,
