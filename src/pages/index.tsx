@@ -22,7 +22,7 @@ const icons = [
   },
   {
     component: ResumeIcon,
-    href: '/resume.pdf',
+    href: 'http://github.com/chrissantamaria/resume/releases/latest/download/resume.pdf',
   },
   {
     component: EmailIcon,
