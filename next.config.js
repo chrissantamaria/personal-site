@@ -7,12 +7,12 @@ module.exports = {
         source: '/resume.pdf',
         destination:
           'http://github.com/chrissantamaria/resume/releases/latest/download/resume.pdf',
-        permanent: false,
+        permanent: true,
       },
       {
         source: '/call',
         destination: 'https://calendly.com/chrissantamaria',
-        permanent: false,
+        permanent: true,
       },
     ];
   },
