@@ -6,7 +6,7 @@ module.exports = {
       {
         source: '/resume.pdf',
         destination:
-          'http://github.com/chrissantamaria/resume/releases/latest/download/resume.pdf',
+          'https://github.com/chrissantamaria/resume/releases/latest/download/resume.pdf',
         permanent: false,
       },
       {
