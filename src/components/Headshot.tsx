@@ -1,23 +1,30 @@
 import React from 'react';
 import clsx from 'clsx';
-import { StaticImage } from 'gatsby-plugin-image';
+import Image from 'next/image';
 
-type Props = {
+import headshotImage from '../images/headshot.jpg';
+
+interface Props {
   className?: string;
-};
+  width: number;
+  height?: number;
+}
 
-const Headshot = ({ className }: Props) => (
-  <StaticImage
-    src="../images/headshot.jpg"
-    width={400}
-    className={clsx(className, 'rounded-full border-4 border-white isolate')}
-    // Prevent child placeholder img from having its own border
-    imgClassName="border-0"
-    loading="eager"
-    placeholder="blurred"
-    quality={90}
-    alt="Headshot"
-  />
+const Headshot: React.FC<Props> = ({ className, width, height = width }) => (
+  <span
+    className={clsx(
+      className,
+      'flex rounded-full border-4 border-white isolate overflow-hidden'
+    )}
+  >
+    <Image
+      src={headshotImage}
+      alt="Headshot of Chris"
+      width={width}
+      height={height}
+      placeholder="blur"
+    />
+  </span>
 );
 
 export default Headshot;

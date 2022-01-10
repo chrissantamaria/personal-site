@@ -8,8 +8,7 @@
 
 html,
 body,
-#___gatsby,
-#gatsby-focus-wrapper {
+#__next {
   height: 100%;
 }
 

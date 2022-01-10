@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ResumeIcon = (props: React.SVGProps<SVGSVGElement>) => (
+const ResumeIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg viewBox="0 0 512 512" {...props}>
     <title>Resume</title>
     <path d="M428 224H288a48 48 0 01-48-48V36a4 4 0 00-4-4h-92a64 64 0 00-64 64v320a64 64 0 0064 64h224a64 64 0 0064-64V228a4 4 0 00-4-4z"></path>

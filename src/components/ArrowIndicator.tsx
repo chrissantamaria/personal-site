@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useState } from 'react';
 import clsx from 'clsx';
 import debounce from 'just-debounce';
 
+import useIsomorphicLayoutEffect from '../hooks/useIsomorphicLayoutEffect';
 import ArrowIcon from './icons/ArrowIcon';
 
 const ArrowIndicator = () => {
@@ -9,7 +10,7 @@ const ArrowIndicator = () => {
   // while preventing an immediate fade-out for users refreshing at the bottom of the page
   const [hasScrolled, setHasScrolled] = useState(true);
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const updateHasScrolled = () => {
       setHasScrolled(window.scrollY > 20);
     };
