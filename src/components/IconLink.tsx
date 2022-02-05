@@ -2,7 +2,7 @@ import React from 'react';
 import OutboundLink from './OutboundLink';
 
 interface Props {
-  component: React.FC<React.SVGProps<SVGSVGElement>>;
+  component: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   href: string;
 }
 
