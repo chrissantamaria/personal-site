@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import debounce from 'just-debounce';
 
