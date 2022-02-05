@@ -29,15 +29,15 @@ const ArrowIndicator = () => {
   return (
     <a
       className={clsx(
-        'absolute bottom-2 left-1/2 transform -translate-x-1/2 transition-opacity duration-500 cursor-pointer',
+        'absolute bottom-2 left-1/2 -translate-x-1/2 transform cursor-pointer transition-opacity duration-500',
         {
-          'opacity-100 pointer-events-auto': !hasScrolled,
-          'opacity-0 pointer-events-none': hasScrolled,
+          'pointer-events-auto opacity-100': !hasScrolled,
+          'pointer-events-none opacity-0': hasScrolled,
         }
       )}
       href="#about"
     >
-      <ArrowIcon className="text-white fill-current h-12 animate-float" />
+      <ArrowIcon className="h-12 animate-float fill-current text-white" />
     </a>
   );
 };

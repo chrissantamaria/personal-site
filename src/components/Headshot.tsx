@@ -14,7 +14,7 @@ const Headshot: React.FC<Props> = ({ className, width, height = width }) => (
   <span
     className={clsx(
       className,
-      'flex rounded-full border-4 border-white isolate overflow-hidden'
+      'isolate flex overflow-hidden rounded-full border-4 border-white'
     )}
   >
     <Image
