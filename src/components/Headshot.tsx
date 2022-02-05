@@ -10,7 +10,7 @@ interface Props {
   height?: number;
 }
 
-const Headshot: React.FC<Props> = ({ className, width, height = width }) => (
+const Headshot = ({ className, width, height = width }: Props) => (
   <span
     className={clsx(
       className,

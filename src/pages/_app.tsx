@@ -5,7 +5,7 @@ import Analytics from '../components/Analytics';
 import SEO from '../components/SEO';
 import '../styles/globals.css';
 
-const App: React.FC<AppProps> = ({ Component, pageProps }) => (
+const App = ({ Component, pageProps }: AppProps) => (
   <>
     <Analytics />
     <SEO />

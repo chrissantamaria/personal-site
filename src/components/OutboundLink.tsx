@@ -4,7 +4,7 @@ interface Props extends React.HTMLProps<HTMLAnchorElement> {
   href: string;
 }
 
-const OutboundLink: React.FC<Props> = (props) => (
+const OutboundLink = (props: Props) => (
   <a
     target="_blank"
     rel="noreferrer"

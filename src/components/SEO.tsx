@@ -4,7 +4,7 @@ import Head from 'next/head';
 const TITLE = 'Chris Santamaria';
 const DESCRIPTION = 'Student, fullstack web developer and avid learner';
 
-const SEO: React.FC = () => (
+const SEO = () => (
   <Head>
     <title>{TITLE}</title>
     <meta name="description" content={DESCRIPTION} />

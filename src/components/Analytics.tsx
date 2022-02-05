@@ -1,7 +1,7 @@
 import React from 'react';
 import Script from 'next/script';
 
-const SEO: React.FC = () => (
+const SEO = () => (
   <Script
     src={`${process.env.NEXT_PUBLIC_UMAMI_URL}/stats.js`}
     strategy="afterInteractive"
