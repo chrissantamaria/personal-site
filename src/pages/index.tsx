@@ -50,7 +50,7 @@ const IndexPage: NextPage = () => (
         </h3>
         <p className={CLASSNAME_PARAGRAPH}>
           I&apos;m a student at the University of Virginia studying computer
-          science, currently building web experiences at Figma.
+          science, passionate about building impactful web experiences.
         </p>
         <p className={CLASSNAME_PARAGRAPH}>
           Feel free to reach out through any of the platforms below or view my
