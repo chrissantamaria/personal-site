@@ -1,5 +1,3 @@
-import type { NextPage } from 'next';
-
 import Headshot from '../components/Headshot';
 import ArrowIndicator from '../components/ArrowIndicator';
 import IconLink from '../components/IconLink';
@@ -30,7 +28,7 @@ const icons = [
   },
 ];
 
-const IndexPage: NextPage = () => (
+const Page = () => (
   <>
     <div className="flex flex-col">
       <div
@@ -66,4 +64,4 @@ const IndexPage: NextPage = () => (
   </>
 );
 
-export default IndexPage;
+export default Page;

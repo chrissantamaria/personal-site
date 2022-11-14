@@ -1,5 +1,3 @@
-import React from 'react';
-
 const GitHubIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" {...props}>
     <title>GitHub</title>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ResumeIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 512 512" {...props}>
     <title>Resume</title>

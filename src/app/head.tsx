@@ -1,10 +1,8 @@
-import Head from 'next/head';
-
 const TITLE = 'Chris Santamaria';
 const DESCRIPTION = 'Student, fullstack web developer and avid learner';
 
-const SEO = () => (
-  <Head>
+const Head = () => (
+  <>
     <title>{TITLE}</title>
     <meta name="description" content={DESCRIPTION} />
 
@@ -25,7 +23,7 @@ const SEO = () => (
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333" />
     <meta name="theme-color" content="#543f79" />
-  </Head>
+  </>
 );
 
-export default SEO;
+export default Head;

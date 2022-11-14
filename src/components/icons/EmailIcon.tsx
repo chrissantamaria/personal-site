@@ -1,5 +1,3 @@
-import React from 'react';
-
 const EmailIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" {...props}>
     <title>Email</title>
