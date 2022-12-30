@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 
-import headshotImage from '../images/headshot.jpg';
+import headshotImage from '~/images/headshot.jpg';
 
 interface Props {
   className?: string;

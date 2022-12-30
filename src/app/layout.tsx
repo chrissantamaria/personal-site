@@ -1,6 +1,6 @@
 import { Open_Sans } from '@next/font/google';
 
-import { Analytics } from '../components/Analytics';
+import { Analytics } from '~/components/Analytics';
 
 import '../styles/globals.css';
 

@@ -4,8 +4,8 @@ import { useState } from 'react';
 import clsx from 'clsx';
 import debounce from 'just-debounce';
 
-import useIsomorphicLayoutEffect from '../hooks/useIsomorphicLayoutEffect';
-import ArrowIcon from './icons/ArrowIcon';
+import useIsomorphicLayoutEffect from '~/hooks/useIsomorphicLayoutEffect';
+import ArrowIcon from '~/components/icons/ArrowIcon';
 
 const ArrowIndicator = () => {
   // Setting default to true gives a nice fade-in while at the top of the page

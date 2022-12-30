@@ -1,11 +1,11 @@
-import Headshot from '../components/Headshot';
-import ArrowIndicator from '../components/ArrowIndicator';
-import IconLink from '../components/IconLink';
+import Headshot from '~/components/Headshot';
+import ArrowIndicator from '~/components/ArrowIndicator';
+import IconLink from '~/components/IconLink';
 
-import GitHubIcon from '../components/icons/GitHubIcon';
-import LinkedInIcon from '../components/icons/LinkedInIcon';
-import ResumeIcon from '../components/icons/ResumeIcon';
-import EmailIcon from '../components/icons/EmailIcon';
+import GitHubIcon from '~/components/icons/GitHubIcon';
+import LinkedInIcon from '~/components/icons/LinkedInIcon';
+import ResumeIcon from '~/components/icons/ResumeIcon';
+import EmailIcon from '~/components/icons/EmailIcon';
 
 const CLASSNAME_PARAGRAPH = 'my-4 text-xl font-light leading-8';
 
