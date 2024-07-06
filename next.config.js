@@ -11,7 +11,7 @@ module.exports = {
       },
       {
         source: '/call',
-        destination: 'https://calendly.com/chrissantamaria',
+        destination: 'https://cal.com/chrissantamaria/30min',
         permanent: false,
       },
     ];
