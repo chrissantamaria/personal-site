@@ -4,6 +4,7 @@
   "author": "Chris Santamaria <chris@santamaria.me>",
   "license": "MIT",
   "private": true,
+  "packageManager": "pnpm@9.4.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
