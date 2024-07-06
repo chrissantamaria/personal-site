@@ -13,7 +13,7 @@ const Headshot = ({ className, width, height = width }: Props) => (
   <span
     className={clsx(
       className,
-      'isolate flex overflow-hidden rounded-full border-4 border-white'
+      'isolate flex overflow-hidden rounded-full border-4 border-white',
     )}
   >
     <Image

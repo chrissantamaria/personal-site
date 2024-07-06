@@ -35,7 +35,7 @@ const ArrowIndicator = () => {
         {
           'pointer-events-auto opacity-100': !hasScrolled,
           'pointer-events-none opacity-0': hasScrolled,
-        }
+        },
       )}
       href="#about"
     >
