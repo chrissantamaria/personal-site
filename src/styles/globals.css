@@ -1,10 +1,20 @@
-:root {
-  --color-primary: #543f79;
-}
+@import 'tailwindcss';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --color-primary: #543f79;
+
+  --animate-float: float 2s ease infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+}
 
 html,
 body,
