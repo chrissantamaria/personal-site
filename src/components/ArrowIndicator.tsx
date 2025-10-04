@@ -1,18 +1,17 @@
 'use client';
 
-import { useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import clsx from 'clsx';
 import debounce from 'just-debounce';
 
 import ArrowIcon from '~/components/icons/ArrowIcon';
-import useIsomorphicLayoutEffect from '~/hooks/useIsomorphicLayoutEffect';
 
 const ArrowIndicator = () => {
   // Setting default to true gives a nice fade-in while at the top of the page
   // while preventing an immediate fade-out for users refreshing at the bottom of the page
   const [hasScrolled, setHasScrolled] = useState(true);
 
-  useIsomorphicLayoutEffect(() => {
+  useLayoutEffect(() => {
     const updateHasScrolled = () => {
       setHasScrolled(window.scrollY > 20);
     };
