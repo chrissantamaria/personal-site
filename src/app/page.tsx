@@ -6,7 +6,9 @@ import GitHubIcon from '~/components/icons/GitHubIcon';
 import LinkedInIcon from '~/components/icons/LinkedInIcon';
 import ResumeIcon from '~/components/icons/ResumeIcon';
 
-const CLASSNAME_PARAGRAPH = 'my-4 text-xl font-light leading-8';
+import { description, title } from './shared';
+
+const CLASSNAME_PARAGRAPH = 'text-xl font-light leading-8';
 
 const icons = [
   {
@@ -35,25 +37,32 @@ const Page = () => (
         style={{ height: 'calc(100vh - 2rem)' }}
       >
         <Headshot className="mb-4" width={400} />
-        <h1 className="mb-2 text-5xl font-bold">Chris Santamaria</h1>
-        <h2 className="text-3xl font-light">
-          Student, software engineer, and avid learner
-        </h2>
+        <h1 className="mb-2 text-5xl font-bold">{title}</h1>
+        <h2 className="text-3xl font-light">{description}</h2>
         <ArrowIndicator />
       </div>
-      <div className="mx-auto my-16 max-w-4xl px-8" id="about">
-        <h3 className="mb-4 text-3xl leading-8 font-semibold">
-          Hi, I&apos;m Chris! 👋
-        </h3>
-        <p className={CLASSNAME_PARAGRAPH}>
-          I&apos;m a student at the University of Virginia studying computer
-          science, passionate about building impactful web experiences.
-        </p>
-        <p className={CLASSNAME_PARAGRAPH}>
-          Feel free to reach out through any of the platforms below or view my
-          resume. I&apos;d love to get in touch!
-        </p>
-        <div className="mx-auto mt-8 flex max-w-sm justify-between">
+      <div
+        className="mx-auto my-12 flex max-w-4xl flex-col gap-8 px-8"
+        id="about"
+      >
+        <div className="flex flex-col gap-4">
+          <p className={CLASSNAME_PARAGRAPH}>
+            i'm a software engineer currently working at figma. i also work on{' '}
+            <a
+              className="underline"
+              href="https://toontownrewritten.com/"
+              target="_blank"
+            >
+              toontown rewritten
+            </a>
+            .
+          </p>
+          <p className={CLASSNAME_PARAGRAPH}>
+            feel free to reach out through any of the platforms below. i'd love
+            to get in touch!
+          </p>
+        </div>
+        <div className="mx-auto flex max-w-sm justify-between">
           {icons.map((props) => (
             <IconLink key={props.href} {...props} />
           ))}
