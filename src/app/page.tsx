@@ -31,7 +31,7 @@ const Page = () => (
   <>
     <div className="flex flex-col">
       <div
-        className="relative flex flex-col items-center justify-center bg-primary px-8 text-center text-white"
+        className="bg-primary relative flex flex-col items-center justify-center px-8 text-center text-white"
         style={{ height: 'calc(100vh - 2rem)' }}
       >
         <Headshot className="mb-4" width={400} />
@@ -41,8 +41,8 @@ const Page = () => (
         </h2>
         <ArrowIndicator />
       </div>
-      <div className="my-16 mx-auto max-w-4xl px-8" id="about">
-        <h3 className="mb-4 text-3xl font-semibold leading-8">
+      <div className="mx-auto my-16 max-w-4xl px-8" id="about">
+        <h3 className="mb-4 text-3xl leading-8 font-semibold">
           Hi, I&apos;m Chris! 👋
         </h3>
         <p className={CLASSNAME_PARAGRAPH}>

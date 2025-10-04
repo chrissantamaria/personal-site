@@ -1,7 +1,7 @@
 'use client';
 
 import { useLayoutEffect, useState } from 'react';
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 import debounce from 'just-debounce';
 
 import ArrowIcon from '~/components/icons/ArrowIcon';
@@ -38,7 +38,7 @@ const ArrowIndicator = () => {
       )}
       href="#about"
     >
-      <ArrowIcon className="h-12 animate-float fill-current text-white" />
+      <ArrowIcon className="animate-float h-12 fill-current text-white" />
     </a>
   );
 };

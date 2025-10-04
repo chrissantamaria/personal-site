@@ -1,5 +1,7 @@
-/** @type {import('next').NextConfig} */
-module.exports = {
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
+  // eslint-disable-next-line @typescript-eslint/require-await
   async redirects() {
     return [
       {
@@ -16,3 +18,5 @@ module.exports = {
     ];
   },
 };
+
+export default nextConfig;
