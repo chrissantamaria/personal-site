@@ -9,7 +9,6 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
-    "start": "next start",
     "lint": "eslint .",
     "format": "prettier --write .",
     "prepare": "husky install"
