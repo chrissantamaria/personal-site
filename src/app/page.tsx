@@ -5,11 +5,11 @@ import dynamic from 'next/dynamic';
 import { animationConfig } from '~/components/AnimatedBackground/config';
 import ArrowIndicator from '~/components/ArrowIndicator';
 import Headshot from '~/components/Headshot';
-import IconLink from '~/components/IconLink';
 import EmailIcon from '~/components/icons/EmailIcon';
 import GitHubIcon from '~/components/icons/GitHubIcon';
 import LinkedInIcon from '~/components/icons/LinkedInIcon';
 import ResumeIcon from '~/components/icons/ResumeIcon';
+import { Tooltip, TooltipContent, TooltipTrigger } from '~/components/Tooltip';
 
 import { description, title } from './shared';
 
@@ -19,22 +19,26 @@ const LazyAnimatedBackground = dynamic(() =>
   ),
 );
 
-const icons = [
+const links = [
   {
-    component: GitHubIcon,
+    iconComponent: GitHubIcon,
     href: 'https://github.com/chrissantamaria',
+    label: 'GitHub',
   },
   {
-    component: LinkedInIcon,
+    iconComponent: LinkedInIcon,
     href: 'https://www.linkedin.com/in/chris-santamaria-10',
+    label: 'LinkedIn',
   },
   {
-    component: ResumeIcon,
+    iconComponent: ResumeIcon,
     href: '/resume.pdf',
+    label: 'Resume',
   },
   {
-    component: EmailIcon,
+    iconComponent: EmailIcon,
     href: 'mailto:chris@santamaria.me?subject=👋',
+    label: 'Email',
   },
 ];
 
@@ -74,8 +78,17 @@ const Page = () => (
           .
         </p>
         <div className="mx-auto flex max-w-sm justify-between">
-          {icons.map((props) => (
-            <IconLink key={props.href} {...props} />
+          {links.map(({ iconComponent: IconComponent, href, label }) => (
+            <Tooltip key={href}>
+              <TooltipTrigger className="mx-4">
+                <a target="_blank" rel="noreferrer" href={href}>
+                  <IconComponent className="h-9" />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>{label}</p>
+              </TooltipContent>
+            </Tooltip>
           ))}
         </div>
       </div>
