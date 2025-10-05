@@ -8,8 +8,6 @@ import ResumeIcon from '~/components/icons/ResumeIcon';
 
 import { description, title } from './shared';
 
-const CLASSNAME_PARAGRAPH = 'text-xl font-light leading-8';
-
 const icons = [
   {
     component: GitHubIcon,
@@ -45,23 +43,17 @@ const Page = () => (
         className="mx-auto my-12 flex max-w-4xl flex-col gap-8 px-8"
         id="about"
       >
-        <div className="flex flex-col gap-4">
-          <p className={CLASSNAME_PARAGRAPH}>
-            i'm a software engineer currently working at figma. i also work on{' '}
-            <a
-              className="underline"
-              href="https://toontownrewritten.com/"
-              target="_blank"
-            >
-              toontown rewritten
-            </a>
-            .
-          </p>
-          <p className={CLASSNAME_PARAGRAPH}>
-            feel free to reach out through any of the platforms below. i'd love
-            to get in touch!
-          </p>
-        </div>
+        <p className="text-xl font-light">
+          i'm a software engineer at figma. i also work on{' '}
+          <a
+            className="underline"
+            href="https://toontownrewritten.com/"
+            target="_blank"
+          >
+            toontown rewritten
+          </a>
+          .
+        </p>
         <div className="mx-auto flex max-w-sm justify-between">
           {icons.map((props) => (
             <IconLink key={props.href} {...props} />
