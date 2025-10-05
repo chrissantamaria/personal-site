@@ -30,7 +30,7 @@ const ArrowIndicator = () => {
   return (
     <a
       className={clsx(
-        'absolute bottom-2 left-1/2 -translate-x-1/2 transform cursor-pointer transition-opacity duration-500',
+        'absolute bottom-2 left-1/2 -translate-x-1/2 transform cursor-pointer transition-opacity duration-300',
         {
           'pointer-events-auto opacity-100': !hasScrolled,
           'pointer-events-none opacity-0': hasScrolled,
