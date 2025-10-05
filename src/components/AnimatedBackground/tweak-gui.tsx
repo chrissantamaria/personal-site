@@ -14,9 +14,13 @@ function initTweakGUI() {
     throw new Error(`#${TWEAK_GUI_ID} element not found`);
   }
 
+  // Check if device is mobile based on viewport width
+  const isMobile = window.innerWidth < 768;
+
   const pane = new Pane({
     title: 'Controls',
     container,
+    expanded: !isMobile,
   });
 
   const colorsFolder = pane.addFolder({ title: 'Colors' });
