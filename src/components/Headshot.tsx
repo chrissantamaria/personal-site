@@ -17,6 +17,7 @@ const Headshot = ({ className, width, height = width }: Props) => (
     )}
   >
     <Image
+      className="select-none"
       src={headshotImage}
       alt="Headshot of Chris"
       width={width}
