@@ -22,6 +22,7 @@ const Headshot = ({ className, width, height = width }: Props) => (
       width={width}
       height={height}
       placeholder="blur"
+      draggable={false}
     />
   </span>
 );
