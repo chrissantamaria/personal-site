@@ -1,3 +1,8 @@
+'use client';
+
+import dynamic from 'next/dynamic';
+
+import { animationConfig } from '~/components/AnimatedBackground/config';
 import ArrowIndicator from '~/components/ArrowIndicator';
 import Headshot from '~/components/Headshot';
 import IconLink from '~/components/IconLink';
@@ -7,6 +12,12 @@ import LinkedInIcon from '~/components/icons/LinkedInIcon';
 import ResumeIcon from '~/components/icons/ResumeIcon';
 
 import { description, title } from './shared';
+
+const LazyAnimatedBackground = dynamic(() =>
+  import('~/components/AnimatedBackground').then(
+    (mod) => mod.AnimatedBackground,
+  ),
+);
 
 const icons = [
   {
@@ -27,17 +38,25 @@ const icons = [
   },
 ];
 
+const backgroundColor = `rgb(${animationConfig.baseColor.r}, ${animationConfig.baseColor.g}, ${animationConfig.baseColor.b})`;
+
 const Page = () => (
   <>
     <div className="flex flex-col">
       <div
-        className="bg-primary relative flex flex-col items-center justify-center px-8 text-center text-white"
-        style={{ height: 'calc(100vh - 2rem)' }}
+        className="relative flex flex-col justify-center px-8 text-center text-white"
+        style={{
+          height: 'calc(100vh - 2rem)',
+          backgroundColor,
+        }}
       >
-        <Headshot className="mb-4" width={400} />
-        <h1 className="mb-2 text-5xl font-bold">{title}</h1>
-        <h2 className="text-3xl font-light">{description}</h2>
-        <ArrowIndicator />
+        <LazyAnimatedBackground />
+        <div className="isolate flex flex-col items-center">
+          <Headshot className="mb-4" width={400} />
+          <h1 className="mb-2 text-5xl font-bold">{title}</h1>
+          <h2 className="text-3xl font-light">{description}</h2>
+          <ArrowIndicator />
+        </div>
       </div>
       <div
         className="mx-auto my-12 flex max-w-4xl flex-col gap-8 px-8"

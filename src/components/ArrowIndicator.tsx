@@ -1,5 +1,3 @@
-'use client';
-
 import { useLayoutEffect, useState } from 'react';
 import { clsx } from 'clsx';
 import debounce from 'just-debounce';
